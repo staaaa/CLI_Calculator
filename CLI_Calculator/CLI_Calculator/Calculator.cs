@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CLI_Calculator;
 using org.mariuszgromada.math.mxparser;
 
 namespace Kalkulator_konsola
 {
-    public class Calculator
+    public class Calculator:Conditions
     {
         private string input;
         private IDictionary<string, Argument> dictArgs;
@@ -22,39 +23,39 @@ namespace Kalkulator_konsola
 
         public void Evaluate()
         {
-            if (input.Contains("arg") && input.Split(" ").Length == 3 && input.Contains("clear") == false)
+            if (IfAddVar(input))
             {
                 AddVar(input.Split(' ').Skip(1).FirstOrDefault(), float.Parse(input.Split(' ').Skip(2).FirstOrDefault()));
             }
-            else if (input.Contains("arg ") && input.Split(" ").Length == 2)
+            else if (IfShowArgument(input))
             {
                 ShowArgument(input.Split(" ").Skip(1).First());
             }
-            else if (input.Contains("args show") && input.Split(" ").Length == 2)
+            else if (IfShowAllArguments(input))
             {
                 ShowAllArguments();
             }
-            else if (dictArgs.Keys.Any(Key => input.Contains(Key)) && input.Split(' ').Length == 1)
+            else if (IfShowArgumentFromName(input,dictArgs))
             {
                 ShowArgument(input);
             }
-            else if (input.Contains("calc") || input.Split(' ').FirstOrDefault() == "=")
+            else if (IfCalc(input))
             {
                 Calc(input.Substring(input.IndexOf(' ')),dictArgs.Values.ToArray());
             }
-            else if (input.Contains("args clear") && input.Split(' ').Length == 2)
+            else if (IfDropAllArguments(input))
             {
                 DropAllArguments();
             }
-            else if (input.Contains("arg") && input.Contains("clear") && input.Split(' ').Length == 3)
+            else if (IfDropOneArgument(input))
             {
                 DropOneArgument(input.Split(" ").Skip(1).First());
             }
-            else if(input.Contains("clear") && input.Split(' ').Length == 1)
+            else if(IfClear(input))
             {
                 Clear();
             }
-            else if(input.Contains("help") && input.Split(' ').Length == 1)
+            else if(IfHelp(input))
             {
                 Help();
             }
