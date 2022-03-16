@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{35CC8D1D-C9D1-45C9-B81E-BE242C6EDC5A}|Default">
   <MonoDevelop.Ide.ItemProperties.CLI__Calculator PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CLI_CalculatorTests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CLI_Calculator/Calculator.cs">
     <Files>
-      <File FileName="CLI_Calculator/Calculator.cs" Line="75" Column="10" />
-      <File FileName="CLI_Calculator/Program.cs" />
-      <File FileName="CLI_CalculatorTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="CLI_Calculator/Calculator.cs" Line="58" Column="34" />
+      <File FileName="CLI_Calculator/Program.cs" Line="1" Column="1" />
+      <File FileName="CLI_Calculator/Conditions.cs" Line="37" Column="82" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CLI_Calculator" expanded="True">
-            <Node name="CLI_Calculator" selected="True" />
+            <Node name="CLI_Calculator" expanded="True">
+              <Node name="Calculator.cs" selected="True" />
+            </Node>
             <Node name="CLI_CalculatorTests" expanded="True" />
           </Node>
         </State>
