@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BTs9L3++UhEFewCcVyUmiW5bhXs44J6Np8OjrAIa6F9zMUm1m2lv6VaO6/wSa8q4Obean5J+TD6z20alfXwlkg==",
+  "success": true,
+  "projectFilePath": "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj",
+  "expectedPackageFiles": [
+    "/Users/stachu/.nuget/packages/mathparser.org-mxparser/4.4.2/mathparser.org-mxparser.4.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

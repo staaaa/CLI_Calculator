@@ -1,0 +1,15 @@
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.deps.json
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.runtimeconfig.json
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.runtimeconfig.dev.json
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.dll
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.pdb
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/MathParser.org-mXparser.dll
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.AssemblyReference.cache
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.AssemblyInfoInputs.cache
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.AssemblyInfo.cs
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.CoreCompileInputs.cache
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.CopyComplete
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.dll
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.pdb
+/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.genruntimeconfig.cache
