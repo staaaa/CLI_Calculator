@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj": {}
+    "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj": {}
   },
   "projects": {
-    "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj": {
+    "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj",
-        "projectName": "CLI_CalculatorTests",
-        "projectPath": "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj",
+        "projectUniqueName": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj",
+        "projectName": "CLI_Calculator",
+        "projectPath": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj",
         "packagesPath": "/Users/stachu/.nuget/packages/",
-        "outputPath": "/Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_CalculatorTests/obj/",
+        "outputPath": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/stachu/.config/NuGet/NuGet.Config"
@@ -26,6 +26,68 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MathParser.org-mXparser": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj",
+        "projectName": "CLI_CalculatorTests",
+        "projectPath": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/CLI_CalculatorTests.csproj",
+        "packagesPath": "/Users/stachu/.nuget/packages/",
+        "outputPath": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/stachu/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj": {
+                "projectPath": "/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/CLI_Calculator.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

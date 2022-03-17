@@ -13,3 +13,18 @@
 /Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.dll
 /Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.pdb
 /Volumes/Macintosh HD/VS PROJECTS/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.genruntimeconfig.cache
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.deps.json
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.runtimeconfig.json
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.runtimeconfig.dev.json
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.dll
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/CLI_Calculator.pdb
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/bin/Debug/netcoreapp3.1/MathParser.org-mXparser.dll
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.AssemblyReference.cache
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.AssemblyInfoInputs.cache
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.AssemblyInfo.cs
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.CoreCompileInputs.cache
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.csproj.CopyComplete
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.dll
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.pdb
+/Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_Calculator/obj/Debug/netcoreapp3.1/CLI_Calculator.genruntimeconfig.cache

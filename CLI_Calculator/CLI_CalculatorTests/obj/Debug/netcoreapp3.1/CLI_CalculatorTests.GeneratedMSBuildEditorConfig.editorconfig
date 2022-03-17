@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CLI_CalculatorTests
+build_property.ProjectDir = /Users/stachu/Documents/GitHub/CLI_Calculator/CLI_Calculator/CLI_CalculatorTests/
