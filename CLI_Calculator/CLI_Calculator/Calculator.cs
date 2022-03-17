@@ -21,6 +21,11 @@ namespace Kalkulator_konsola
             input = value;
         }
 
+        public IDictionary<string, Argument> GetDictArgs()
+        {
+            return dictArgs;
+        }
+
         public void Evaluate()
         {
             if (IfAddVar(input))

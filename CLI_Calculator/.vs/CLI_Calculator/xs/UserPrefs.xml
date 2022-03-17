@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.CLI__Calculator PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CLI_Calculator/Calculator.cs">
     <Files>
-      <File FileName="CLI_Calculator/Calculator.cs" Line="58" Column="34" />
+      <File FileName="CLI_Calculator/Calculator.cs" Line="85" Column="76" />
       <File FileName="CLI_Calculator/Program.cs" Line="1" Column="1" />
-      <File FileName="CLI_Calculator/Conditions.cs" Line="37" Column="82" />
+      <File FileName="CLI_Calculator/Conditions.cs" Line="19" Column="21" />
+      <File FileName="CLI_CalculatorTests/UnitTest1.cs" Line="39" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,14 +14,20 @@
             <Node name="CLI_Calculator" expanded="True">
               <Node name="Calculator.cs" selected="True" />
             </Node>
-            <Node name="CLI_CalculatorTests" expanded="True" />
+            <Node name="CLI_CalculatorTests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CLI_Calculator" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CLI__CalculatorTests FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
