@@ -6,19 +6,27 @@ using org.mariuszgromada.math.mxparser;
 
 namespace Kalkulator_konsola
 {
-    public class Calculator:Conditions
+    public class Calculator: OutputInput
     {
         private string input;
         private IDictionary<string, Argument> dictArgs;
+        private Conditions conditions;
+        private OutputInput oi;
 
-        public Calculator()
+        public Calculator(Conditions _conditions, OutputInput _outputInput)
         {
             dictArgs = new Dictionary<string, Argument>();
+            conditions = _conditions;
+            oi = _outputInput;
         }
-
         public void SetInput(string value)
         {
             input = value;
+        }
+
+        public string GetInput()
+        {
+            return input;
         }
 
         public IDictionary<string, Argument> GetDictArgs()
@@ -28,39 +36,39 @@ namespace Kalkulator_konsola
 
         public void Evaluate()
         {
-            if (IfAddVar(input))
+            if (conditions.IfAddVar(input))
             {
                 AddVar(input.Split(' ').Skip(1).FirstOrDefault(), float.Parse(input.Split(' ').Skip(2).FirstOrDefault()));
             }
-            else if (IfShowArgument(input))
+            else if (conditions.IfShowArgument(input))
             {
                 ShowArgument(input.Split(" ").Skip(1).First());
             }
-            else if (IfShowAllArguments(input))
+            else if (conditions.IfShowAllArguments(input))
             {
                 ShowAllArguments();
             }
-            else if (IfShowArgumentFromName(input,dictArgs))
+            else if (conditions.IfShowArgumentFromName(input,dictArgs))
             {
                 ShowArgument(input);
             }
-            else if (IfCalc(input))
+            else if (conditions.IfCalc(input))
             {
                 Calc(input.Substring(input.IndexOf(' ')),dictArgs.Values.ToArray());
             }
-            else if (IfDropAllArguments(input))
+            else if (conditions.IfDropAllArguments(input))
             {
                 DropAllArguments();
             }
-            else if (IfDropOneArgument(input))
+            else if (conditions.IfDropOneArgument(input))
             {
                 DropOneArgument(input.Split(" ").Skip(1).First());
             }
-            else if(IfClear(input))
+            else if(conditions.IfClear(input))
             {
                 Clear();
             }
-            else if(IfHelp(input))
+            else if(conditions.IfHelp(input))
             {
                 Help();
             }
@@ -69,37 +77,44 @@ namespace Kalkulator_konsola
         private void AddVar(string varName, float varValue)
         {
             dictArgs.Add(varName, new Argument(varName + "=" + varValue.ToString()));
-            Console.WriteLine("Dodano argument.");
+            oi.WriteOutputWithBreakRow("Dodano argument.");
         }
 
         private void ShowArgument(string varName)
         {
-            Console.WriteLine(dictArgs[varName].getArgumentName() + " = " + dictArgs[varName].getArgumentValue().ToString());
+            try
+            {
+                oi.WriteOutputWithBreakRow(dictArgs[varName].getArgumentName() + " = " + dictArgs[varName].getArgumentValue().ToString());
+            }
+            catch
+            {
+                oi.WriteOutputWithBreakRow("Podany argument nie istnieje.");
+            }
         }
 
         private void ShowAllArguments()
         {
             foreach (KeyValuePair<string, Argument> a in dictArgs)
             {
-                Console.WriteLine(a.Value.getArgumentName() + " = " + a.Value.getArgumentValue().ToString());
+                oi.WriteOutputWithBreakRow(a.Value.getArgumentName() + " = " + a.Value.getArgumentValue().ToString());
             }
         }
 
         private void Calc(string operation, params Argument[] args)
         {
-            Console.WriteLine(new Expression(operation, args).calculate());
+            oi.WriteOutputWithBreakRow(new Expression(operation, args).calculate().ToString());
         }
 
         private void DropAllArguments()
         {
             dictArgs.Clear();
-            Console.WriteLine("Usunięto wszystkie argumenty.");
+            oi.WriteOutputWithBreakRow("Usunięto wszystkie argumenty.");
         }
 
         private void DropOneArgument(string key)
         {
             dictArgs.Remove(key);
-            Console.WriteLine("Usunięto argument o nazwie " + key);
+            oi.WriteOutputWithBreakRow("Usunięto argument o nazwie " + key);
         }
 
         private void Clear()
@@ -110,14 +125,14 @@ namespace Kalkulator_konsola
         private void ColorConsoleWrite(string colorText, string whiteText)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(colorText);
+            oi.WriteOutputWithoutBreakRow(colorText);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(whiteText);
+            oi.WriteOutputWithBreakRow(whiteText);
         }
 
         private void Help()
         {
-            Console.WriteLine("Oto lista dostępnych formuł:");
+            oi.WriteOutputWithBreakRow("Oto lista dostępnych formuł:");
             ColorConsoleWrite("1. arg [nazwa_zmiennej] [wartosc_zmiennej] ", "- dodaje zmienna o podanej wartości.");
             ColorConsoleWrite("2. arg [nazwa_zmiennej] ", "- wypisuje wartość zmiennej o podanej nazwie.");
             ColorConsoleWrite("3.  args show" , "- dodaje zmienna o podanej wartości.");

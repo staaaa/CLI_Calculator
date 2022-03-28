@@ -1,10 +1,4 @@
-﻿using org.mariuszgromada.math.mxparser;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using CLI_Calculator;
 
 namespace Kalkulator_konsola
 {
@@ -12,17 +6,17 @@ namespace Kalkulator_konsola
     {
         static void Main(string[] args)
         {
-            Calculator calc = new Calculator();
+
+            Calculator calc = new Calculator(new Conditions(), new OutputInput());
             while (true)
             {
-                var command = Console.ReadLine().ToLower();
-                if (command == "quit")
+                calc.SetInput(calc.ReadInput());
+                if (calc.GetInput() == "quit")
                 {
                     break;
                 }
                 else
                 {
-                    calc.SetInput(command);
                     calc.Evaluate();
                 }
             }
