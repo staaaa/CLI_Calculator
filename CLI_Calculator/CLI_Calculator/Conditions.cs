@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using org.mariuszgromada.math.mxparser;
 
 namespace CLI_Calculator
 {
-    public abstract class Conditions
+    public class Conditions
     {
         public bool IfAddVar(string input)
         {

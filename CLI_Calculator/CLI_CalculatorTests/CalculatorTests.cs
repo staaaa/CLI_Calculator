@@ -2,13 +2,13 @@
 using Kalkulator_konsola;
 using System;
 using System.IO;
-using System.Collections.Generic;
+using CLI_Calculator;
 
 namespace CLI_CalculatorTests
 {
     public class Tests
     {
-        Calculator c1 = new Calculator();
+        Calculator c1 = new Calculator(new Conditions(), new OutputInput());
 
         [TestCase ("arg x 5","arg x","x = 5\n")]
         [TestCase ("arg y 70","arg y","y = 70\n")]
@@ -22,6 +22,7 @@ namespace CLI_CalculatorTests
             //act
             c1.SetInput(input);
             c1.Evaluate();
+
             Console.SetOut(stringWriter);
             c1.SetInput(input2);
             c1.Evaluate();
@@ -30,8 +31,8 @@ namespace CLI_CalculatorTests
             var output = stringWriter.ToString();
             Assert.AreEqual(expectedValue, output);
         }
-        [TestCase ("calc 5+10","15\n")]
-        [TestCase ("= 5+10","15\n")]
+        [TestCase("calc 5+10", "15\n")]
+        [TestCase("= 5+10", "15\n")]
         public void Calculating_Equations(string input, string expectedValue)
         {
             //arrange
@@ -41,13 +42,12 @@ namespace CLI_CalculatorTests
             c1.SetInput(input);
             Console.SetOut(stringWriter);
             c1.Evaluate();
-            
 
             //asert
             var output = stringWriter.ToString();
             Assert.AreEqual(expectedValue, output);
         }
-        [TestCase ("arg x 25","arg y 30","args clear")]
+        [TestCase("arg x 25", "arg y 30", "args clear")]
         public void Dropping_All_Arguments(string input, string input2, string input3)
         {
             //act
